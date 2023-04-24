@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int age,w;
+    float he;
+    printf("enter all the parameters for selection in army");
+    scanf("%d",&age);
+    scanf("%d",&w);
+    scanf("%f",&he);
+    if((age>=20&&age<=30)&&(w>=60&&w<=80)&&(he>=165&&he<=185))
+    {
+        printf("Qualified");
+    }
+    else if(age<20||age>30)
+    {
+        printf("disqualified due to age");
+    }
+    else if(w<60||w>80)
+    {
+        printf("disqualified due to weight");
+    }
+    else
+    {
+        printf("disqualified due to height");
+    }
+    return 0;
+}
