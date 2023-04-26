@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+    int n=0;
+    printf("enter sides of a triangle");
+    int a,b,c;
+    int ob=0,ac=0,ri=0;
+    while(n<=5)
+    {
+        scanf("%d",&a);
+        scanf("%d",&b);
+        scanf("%d",&c);
+        int s=a+b+c;
+        if(s<180||s>180)
+        {
+            printf("Wrong input");
+            continue;
+        }
+        else
+        {
+            c++;
+            if(a>90||b>90||c>90)
+            {
+                ob++;
+            }
+            else if(a==90||b==90||c==90)
+            {
+                ri++;
+            }
+            else{
+                ac++;
+            }
+        }
+        
+    }
+    
+    printf("right angled%d",ri);
+    printf("obtuse angled%d",ob);
+    printf("acute angled%d",ac);
+    
+}
+
