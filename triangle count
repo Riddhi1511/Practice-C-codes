@@ -4,7 +4,7 @@ int main()
     int n=0;
     printf("enter sides of a triangle");
     int a,b,c;
-    int ob=0,ac=0,ri=0;
+    int ob=0,ac=0,ri=0,w=0;
     while(n<=5)
     {
         scanf("%d",&a);
@@ -14,6 +14,7 @@ int main()
         if(s<180||s>180)
         {
             printf("Wrong input");
+            w++;
             continue;
         }
         else
@@ -33,7 +34,7 @@ int main()
         }
         
     }
-    
+    printf("wrong entries %d",w);
     printf("right angled%d",ri);
     printf("obtuse angled%d",ob);
     printf("acute angled%d",ac);
